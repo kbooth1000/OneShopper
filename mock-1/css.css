@@ -40,8 +40,14 @@ a {
     background:  var(--lt-blue);;
     padding: 0 .5rem;
 }
-.top-links .phone-link {
+.phone-link,
+.login-link,
+.signup-link {
     font-size: .9rem;
+}
+
+.login-link {
+    margin-left: calc(100% - 630px) !important
 }
 .top-links i {
     font-size: 12px; 
