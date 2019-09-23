@@ -79,7 +79,8 @@ a {
     text-align: center;
 }
 
-.nav-list li a.active {
+.nav-list li a.active,
+.nav-list li a:hover {
     color: var(--hi-blue);
 }
 
@@ -128,6 +129,10 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.tile-nav a:hover {
+    background: var(--lt-blue);
+}
 .slider-div {
     background: url(images/ACCondenser.webp) no-repeat;
     background-size: cover;
@@ -143,6 +148,10 @@ a {
     margin: 14% auto auto 8%;
     position: absolute;
     padding: 1rem;
+
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.27) 0%, rgba(0,0,0,0.48) 69%, rgba(0,0,0,0.47) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.27) 0%,rgba(0,0,0,0.48) 69%,rgba(0,0,0,0.47) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.27) 0%,rgba(0,0,0,0.48) 69%,rgba(0,0,0,0.47) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .hero h3 {
