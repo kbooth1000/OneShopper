@@ -206,19 +206,29 @@ a {
 
 .tile-nav {
     min-width: 140px;
-    height: 130px;
+    height: 190px;
     flex-grow: 1;
-    margin: .75rem;
+    margin: .2rem;
+    
+	
+	background: var(--main-blue);
+    filter: opacity(0.5);
+    border: 6px solid var(--main-blue);
+    box-sizing: border-box;
 }
 
 .tile-nav a {
     width: 100%;
     height: 100%;
-    background: var(--main-blue);
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+
+	background: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/) no-repeat;
+    background-size: cover;
+    border: 9px solid var(--main-blue);
+    filter: grayscale(1);
 }
 
 .tile-nav a:hover {
@@ -327,7 +337,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,0.27) 0%,rgba(0,0,0,0.65) 37%,
     }
 
     .tile-nav {
-        margin: .75rem;
+        margin: .1rem;
     }
 
     .call-to-action a {
