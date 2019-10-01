@@ -3,7 +3,8 @@ html {
     --hi-blue: #26cdff;
     --lt-blue: #1d5183;
     --trans-blue: hsla(209, 95%, 51%, 0.2);
-    --lt-trans-blue: hsla(209, 95%, 1%, 0.2);
+    --main-blue-trans: hsla(209, 95%, 24%, 0.2);
+    --lt-blue-trans: hsla(194, 100%, 57%, 0.5);
 }
 
 body {
@@ -226,7 +227,7 @@ a {
     height: 100%;
     flex-grow: 1;
     margin: 0;
-    background: var(--trans-blue);
+    background: var(--main-blue-trans);
     box-sizing: border-box;
     position: absolute;
     display: flex;
@@ -266,8 +267,18 @@ a {
     background-image: url(https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg);
 }
 
+.nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
+.nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
+    background: var(--lt-blue-trans);
+}
+
+.nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
+.nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
+    background: var(--main-blue-trans);
+}
+
 .tile-mask:hover {
-    background: var(--lt-trans-blue);
+    background: var(--lt-blue-trans);
 }
 
 .slider-div {
@@ -370,7 +381,7 @@ a {
 
 @media screen and (min-width: 834px) {
 
-    
+
 
     .call-to-action a {
         width: 55%;
@@ -405,7 +416,7 @@ a {
     .nav-list li {
         display: inline-block;
     }
-    
+
     .nav-breaker {
         min-width: 400px;
         width: 50%;
@@ -414,10 +425,19 @@ a {
     .tile-nav {
         margin: .1rem;
     }
+
+    .nav-breaker:nth-child(1) .tile-nav:nth-child(1) .tile-mask,
+    .nav-breaker:nth-child(2) .tile-nav:nth-child(1) .tile-mask {
+        background: var(--lt-blue-trans);
+    }
+
+    .nav-breaker:nth-child(1) .tile-nav:nth-child(2) .tile-mask,
+    .nav-breaker:nth-child(2) .tile-nav:nth-child(2) .tile-mask {
+        background: var(--main-blue-trans);
+    }
 }
 
 @media screen and (min-width: 1060px) {
-
     .call-to-action a {
         font-size: 1.5rem;
     }
