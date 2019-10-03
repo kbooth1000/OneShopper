@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop Now -- Rock Ruth HVAC</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7503d70c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    
+        <div class="main">
+                <div class="top-links">
+                    <div class="email-link">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:info@rockruthhvac.com">info@rockruthhvac.com</a>
+                    </div>
+                    <div class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+14044814642">(404) 581-4642</a>
+                    </div>
+        
+                    <div class="login-link">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="signup-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+        
+                <div class="main-nav">
+                    <a href="../index.html"><div class="logo"></div></a>
+                    <div class="nav-list">
+                        <span class="menu-icon"><i class="fas fa-bars"></i></span>
+                        <ul>
+                            <li><a href="../index.html" class="active">HOME</li></a>
+                            <li><a href="#">SHOP NOW</li></a>
+                            <li><a href="#">
+                                    <span class="nobreak">HVAC EQUIPMENT</span>
+                                    <span class="nobreak">FOR SALE</span></li></a>
+                            <li><a href="#">FINANCING AVAILABLE</li></a>
+                            <li><a href="#">MORE&nbsp;></li></a>
+                        </ul>
+                    </div>
+                    <div class="quote-button">
+                        <a href="#">GET A QUOTE</a>
+                    </div>
+                </div>
+
+
+    <main style="margin: 1rem 0;">
+        <section class="recommendation-finder">
+            <form class="step1 show active">
+                <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/ac-systems-parts.jpg/:/"
+                    alt="Display of numerous AC units and accessories." class="main-graphic">
+                <fieldset class="fieldset">
+                    <legend>Location:</legend>
+                    <p>Enter zip-code where the unit will be installed:</p>
+                    <input autofocus="" type="text" name="zip-code" pattern="[0-9]*" inputmode="numeric" value=""><br>
+                    <input type="submit" value="Submit" class="submit-button">
+                </fieldset>
+            </form>
+            <aside class="aside1"></aside>
+            <form class="step2">
+                <fieldset class="fieldset">
+                    <legend>Heat Source:</legend>
+                    <p>Is your heat source a:</p>
+                    <input type="radio" name="heat-source" id="gas-furnace" value="furnace"><label for="gas-furnace">Gas
+                        Furnace</label>
+                    <br>
+                    <input type="radio" name="heat-source" id="electric" value="pump"><label
+                        for="electric">Electric/Heat Pump</label> <br>
+                </fieldset>
+                <!-- <input type="submit" value="Submit" class="submit-button" /> -->
+            </form>
+            <aside class="aside2"></aside>
+            <form class="step3">
+                <fieldset class="fieldset" style="display: flex;">
+                    <legend>Square Footage/Tonnage:</legend>
+                    <div>
+                        <div class="footage-dropdown">
+                            <p>
+                                Square footage of the home:
+                            </p>
+                            <select name="footage" class="footage">
+                                <optgroup label="Square Footage">
+                                    <option name="nochoice" value="0">Choose square footage</option>
+                                    <option name="800sf" value="800">700-800 Sq. Ft.</option>
+                                    <option name="1000sf" value="1000">800-1000 Sq. Ft.</option>
+                                    <option name="1200sf" value="1200">1000-1200 Sq. Ft.</option>
+                                    <option name="1400sf" value="1400">1200-1400 Sq. Ft.</option>
+                                    <option name="1700sf" value="1700">1500-1700 Sq. Ft.</option>
+                                    <option name="2000sf" value="2000">1800-2000 Sq. Ft.</option>
+                                    <option name="2500sf" value="2500">2100-2500+ Sq. Ft.</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div><em>or</em></div>
+                        <div class="tonnage-dropdown">
+                            <p>
+                                Tonnage of the existing system:
+                            </p>
+                            <select name="tonnage" class="tonnage">
+                                <optgroup label="Tonnage">
+                                    <option name="nochoice" value="0">Choose tonnage...</option>
+                                    <option name="1_5t" value="800">1.5 tons</option>
+                                    <option name="2_0t" value="1000">2 tons</option>
+                                    <option name="2_5t" value="1200">2.5 tons</option>
+                                    <option name="3_0t" value="1400">3 tons</option>
+                                    <option name="3_5t" value="1700">3.5 tons</option>
+                                    <option name="4_0t" value="2000">4 tons</option>
+                                    <option name="5_0t" value="2500">5 tons</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <aside class="aside3"></aside>
+
+
+            <form class="step4">
+                <fieldset class="fieldset">
+                    <legend>Full System or Replacement Parts:</legend>
+                    <p>
+                        Do you need a full system installed or are you looking for replacement
+                        parts?
+                    </p>
+                    <input type="radio" name="system-or-replacements" value="needsFullSystem" id="full-sys"><label
+                        for="full-sys">Full System</label>
+                    <br>
+                    <input type="radio" name="system-or-replacements" value="needsReplacementParts" id="replace"><label
+                        for="replace">Replacement Parts</label> <br>
+                </fieldset>
+            </form>
+
+            <aside class="aside4"></aside>
+
+            <div class="recommendation">
+                <button class="close-modal">X</button>
+                <!-- FULL SYSTEM BOX   #####################-->
+                <div class="full-system-details">
+                    <div class="unit-name"></div>
+                    <div class="unit-image"></div>
+                    <div class="unit-tonnage"></div>
+                    <div class="unit-seer"></div>
+                    <div class="unit-btu"></div>
+                    <div class="unit-price"></div>
+                    <div class="unit-price-package"></div>
+                </div>
+                <!-- REPLACEMENT PARTS BOX   ###############-->
+                <div class="replacement-parts-box">
+                    <h3>Recommended Replacement Parts:</h3>
+                    <div class="replacement-products"></div>
+                </div>
+                <a href="https://rockruthhvac.com/finacing-available" class="financing-box">
+                </a>
+                <div class="phone-button-box">
+                    <p>
+                        Call to order:<br>
+                        <button class="bold hvr-bounce-to-right phone-button">
+                            <i class="fa fa-phone"></i><a style="color: #fff" href="tel:+17706932946">(770) 693-2946</a>
+                        </button>
+                    </p>
+                </div>
+                <div class="unit-guarantees">
+                    <figure>
+                        <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/100_satisfaction.png/:/rs=w:370,m,cg:true"
+                            alt="100% Satisfaction Guaranteed">
+                        <figcaption>
+                            <strong>100% Satisfaction</strong> <br><span>We guarantee your 100% satisfaction.</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/guaranteed_installation.png/:/rs=w:370,m,cg:true"
+                            alt="Guaranteed installation">
+                        <figcaption>
+                            <strong>Guaranteed Installation</strong> <br><span>You are covered with a parts &amp; labor
+                                warranty.</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/just_right.png/:/rs=w:370,m,cg:true"
+                            alt="100% Satisfaction Guaranteed">
+                        <figcaption>
+                            <strong>Just Right</strong> <br><span>Our experts verify job details in advance.</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/trained_tech.png/:/rs=w:370,m,cg:true"
+                            alt="100% Satisfaction Guaranteed">
+                        <figcaption>
+                            <strong>Trained Technicians</strong> <br><span>Your system will be installed by trained
+                                pros.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="warranties-box">
+                    Warranty: <br>10-yr parts, 1-yr labor INCLUDED!!!
+                </div>
+                <div class="awards-box">
+                    <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/a0be6286-29e3-4225-99b2-ef6f7f9c77ba.png/:/rs=w:370,m,cg:true"
+                        alt="Home Advisor -- Screened &amp; Approved">
+                    <img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/a5e3e12e-61cd-4def-87ba-708cc8c5617f.png/:/rs=w:370,m,cg:true"
+                        alt="Home Advisor -- Screened &amp; Approved">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
