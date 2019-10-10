@@ -1,85 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="grid.css">
-</head>
-<body>
+function gridHTML(sysType, sysTonnage) {
+  console.log("gridHTML: ", sysType);
 
+  return `
 <div class="info-grid">
-  <div class="cell title">1.5 Ton Split System AC w/ Gas Furnace (80%)</div>
+  <div class="cell title">title</div>
   <div class="cell product-image">
-    <img src="mock-1/images/ach_goodman.png" alt="Goodman AC and Heating Unit">
+    <img src="images/ach_goodman.png" alt="Goodman AC and Heating Unit">
   </div>
   <div class="cell pricing-info">
-    
-
-
-
 
 
 <div class="pricing-info-box">
   <section class="pricing-info-row platinum">
   <div class="cell level-name">
     <h3 class="pricing-level">Platinum</h3>
-    <p class="seer">18 SEER</p>
+    <p class="seer">xx SEER</p>
   </div>
   <div class="cell level-info">
-    <div class="level-description">Highest Efficiency, Total Comfort</div>
+    <div class="level-description">one-line level description</div>
     <ul class="level-features">
       <!-- level feature list -->
     </ul>
   </div>
   <div class="cell level-price">
-    <div class="price-month">$108/mo</div>
+    <div class="price-month">$xx/month</div>
     <div class="level-financing">0%, 60 months (OAC)</div>
-    <div class='level-tot-price'>$6485</div>
+    <div class='level-tot-price'>$xxxx</div>
   </div>
 </section>
 
 <section class="pricing-info-row gold">
   <div class="cell level-name">
     <h3 class="pricing-level">Gold</h3>
-    <p class="seer">16 SEER</p>
+    <p class="seer">xx SEER</p>
   </div>
   <div class="cell level-info">
-    <div class="level-description">Highest Efficiency, Total Comfort</div>
+    <div class="level-description">one-line level description</div>
     <ul class="level-features">
       <!-- level feature list -->
     </ul>
   </div>
   <div class="cell level-price">
-    <div class="price-month">$108/mo</div>
+    <div class="price-month">$xx/month</div>
     <div class="level-financing">0%, 60 months (OAC)</div>
-    <div class='level-tot-price'>$6485</div>
+    <div class='level-tot-price'>$xx</div>
   </div>
 </section>
 
 <section class="pricing-info-row silver">
   <div class="cell level-name">
     <h3 class="pricing-level">Silver</h3>
-    <p class="seer">14 SEER</p>
+    <p class="seer">xx SEER</p>
   </div>
   <div class="cell level-info">
-    <div class="level-description">Highest Efficiency, Total Comfort</div>
+    <div class="level-description">one-line level description</div>
     <ul class="level-features">
       <!-- level feature list -->
     </ul>
   </div>
   <div class="cell cell level-price">
-    <div class="price-month">$108/mo</div>
+    <div class="price-month">$xx/mo</div>
     <div class="level-financing">0%, 60 months (OAC)</div>
-    <div class='level-tot-price'>$6485</div>
+    <div class='level-tot-price'>$xxxx</div>
   </div>
 </section>
 
 </div>
-
-
-
 
 
   </div>
@@ -90,7 +76,7 @@
     </div>  
   </div>
   <div class="cell brand-logos">
-      <img src="mock-1/images/brand-logos.png" alt="brand logos">
+      <img src="images/brand-logos.png" alt="brand logos">
   </div>
   <div class="cell finance-btn2">
   <div class="60-month-button">
@@ -102,7 +88,6 @@
       <img src="https://seal-utah.bbb.org/seals/darkgray-seal-200-65-bbb-22001531.png" /><img style="-webkit-user-select: none;margin: auto;" src="https://application.enerbank.com/content/images/MemberFDIC.png">
     <img src="https://application.enerbank.com/content/images/e-b-logo.png">
   </footer>
-  <script src="mock-1/gasSystems.js"></script>
-  <script src="mock-1/grid.js"></script>
-</body>
-</html>
+
+`
+}

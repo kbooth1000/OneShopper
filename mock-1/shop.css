@@ -103,7 +103,7 @@
  .recommendation.show {
      width: 100vw;
      height: 100vh;
-     padding: 2rem;
+     padding: 0.5rem;
      filter: opacity(1);
      border: 1rem rgba(0, 0, 0, 0.4) solid
  }
@@ -214,7 +214,8 @@
      top: 0;
      padding: 0.5rem;
      background: #00aeef;
-     color: #fff
+     color: #fff;
+     z-index: 99;
  }
 
  .phone-button-box {
