@@ -1,5 +1,6 @@
 @supports (display: grid) {
   .info-grid {
+    margin-top: -2rem;
     display: grid;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -7,7 +8,7 @@
     min-height: 350px;
     /* padding: 1.5vw;
     margin: 2vmin; */
-    border: 10px solid #666;
+    /* border: 10px solid #666; */
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     grid-template-areas:

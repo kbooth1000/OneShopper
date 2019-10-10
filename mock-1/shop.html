@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/7503d70c61.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="../grid.css">
 </head>
 
 <body>
@@ -218,7 +219,17 @@
 
 
 </div>
+    <script src="gridHTML.js"></script>
 
+    <script>
+    let recDiv = document.createElement('div');
+    recDiv.innerHTML = gridHTML('gas', '3.0');
+    document.querySelector('.recommendation').insertBefore(recDiv, document.querySelector('.full-system-details'));
+        
+    </script>
     <script src="shop.js"></script>
+
+    <script src="gasSystems.js"></script>
+    <script src="grid.js"></script>
 </body>
 </html>
