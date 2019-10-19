@@ -111,123 +111,123 @@ var getRecReplacements = function getRecReplacements(val) {
         });
 };
 var getRecommendation = function getRecommendation() {
-    if (recommendedUnit && recommendedUnit.name) {
-        unitName.innerHTML = 'We recommend this high-efficiency system package:<br /> <b>'.concat(
-            recommendedUnit.name,
-            '</b>'
-        );
-    } else {
-        unitName.textContent = '';
-    }
-    if (recommendedUnit && recommendedUnit.ton) {
-        unitTonnage.textContent = 'Tonnage: '.concat(recommendedUnit.ton);
-    } else {
-        unitTonnage.textContent = '';
-    }
-    if (recommendedUnit && recommendedUnit.seer) {
-        unitSeer.textContent = 'SEER: '.concat(recommendedUnit.seer);
-    } else {
-        unitSeer.textContent = '';
-    }
-    if (recommendedUnit && (recommendedUnit.btu || recommendedUnit.kw)) {
-        unitBtu.textContent = ''.concat(
-            recommendedUnit.btu ?
-                'BTU: ' + recommendedUnit.btu + 'K' :
-                'kW: ' + recommendedUnit.kw
-        );
-    } else {
-        unitBtu.textContent = '';
-    }
-    if (recommendedUnit && recommendedUnit.priceSplit) {
-        unitPrice.innerHTML = 'Price:  $'
-            .concat(recommendedUnit.priceSplit, '\n             <em>(')
-            .concat(
-                heatingType === 'furnace' ?
-                    'Complete furnace, condenser & coil system -- gas split system' :
-                    'Complete heat pump system',
-                ')</em>'
-            );
-    } else {
-        unitPrice.textContent = '';
-    }
-    if (recommendedUnit && recommendedUnit.pricePackage) {
-        unitPricePackage.innerHTML = ''
-            .concat(!recommendedUnit.priceSplit ? 'Price:' : ' ', '  $')
-            .concat(recommendedUnit.pricePackage, '\n             <em>(')
-            .concat(
-                heatingType === 'furnace' ?
-                    'Package gas system -- replace existing system' :
-                    'Package electric heat pump system',
-                ')</em>'
-            );
-    } else {
-        unitPrice.textContent = '';
-    }
-    if (recommendedUnit && recommendedUnit.imgUrl) {
-        unitImage.innerHTML = '<img src="'.concat(
-            recommendedUnit.imgUrl ?
-                recommendedUnit.imgUrl :
-                'images/no-image.png',
-            '" alt="Image of the unit." />'
-        );
-    } else {
-        unitImage.innerHTML = '';
-    }
-    if (
-        recommendedUnit &&
-        (recommendedUnit.priceSplit || recommendedUnit.pricePackage)
-    ) {
-        unitFinancingBox.innerHTML = '<div class="image-div"><img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/2019-07-15%2012_58_29-60%20months%20financing%20images.png/:/rs=w:1440,h:1440" alt=""></div>\n            <p style="align-self: center; margin: auto; text-align: center; ">With 0% financing, pay as low as <span class="financing-monthly-amount">'.concat(
-            recommendedUnit.priceSplit ?
-                '$' + Math.ceil(recommendedUnit.priceSplit / 60) :
-                '$' + Math.ceil(recommendedUnit.pricePackage / 60),
-            '</span> per month!</p>'
-        );
-    }
-    if (recommendedReplacements.length > 0) {
-        replacementProducts.innerHTML = recommendedReplacements.reduce(function (
-            parts,
-            part
-        ) {
-            var thisPart;
+    // if (recommendedUnit && recommendedUnit.name) {
+    //     unitName.innerHTML = 'We recommend this high-efficiency system package:<br /> <b>'.concat(
+    //         recommendedUnit.name,
+    //         '</b>'
+    //     );
+    // } else {
+    //     unitName.textContent = '';
+    // }
+    // if (recommendedUnit && recommendedUnit.ton) {
+    //     unitTonnage.textContent = 'Tonnage: '.concat(recommendedUnit.ton);
+    // } else {
+    //     unitTonnage.textContent = '';
+    // }
+    // if (recommendedUnit && recommendedUnit.seer) {
+    //     unitSeer.textContent = 'SEER: '.concat(recommendedUnit.seer);
+    // } else {
+    //     unitSeer.textContent = '';
+    // }
+    // if (recommendedUnit && (recommendedUnit.btu || recommendedUnit.kw)) {
+    //     unitBtu.textContent = ''.concat(
+    //         recommendedUnit.btu ?
+    //             'BTU: ' + recommendedUnit.btu + 'K' :
+    //             'kW: ' + recommendedUnit.kw
+    //     );
+    // } else {
+    //     unitBtu.textContent = '';
+    // }
+    // if (recommendedUnit && recommendedUnit.priceSplit) {
+    //     unitPrice.innerHTML = 'Price:  $'
+    //         .concat(recommendedUnit.priceSplit, '\n             <em>(')
+    //         .concat(
+    //             heatingType === 'furnace' ?
+    //                 'Complete furnace, condenser & coil system -- gas split system' :
+    //                 'Complete heat pump system',
+    //             ')</em>'
+    //         );
+    // } else {
+    //     unitPrice.textContent = '';
+    // }
+    // if (recommendedUnit && recommendedUnit.pricePackage) {
+    //     unitPricePackage.innerHTML = ''
+    //         .concat(!recommendedUnit.priceSplit ? 'Price:' : ' ', '  $')
+    //         .concat(recommendedUnit.pricePackage, '\n             <em>(')
+    //         .concat(
+    //             heatingType === 'furnace' ?
+    //                 'Package gas system -- replace existing system' :
+    //                 'Package electric heat pump system',
+    //             ')</em>'
+    //         );
+    // } else {
+    //     unitPrice.textContent = '';
+    // }
+    // if (recommendedUnit && recommendedUnit.imgUrl) {
+    //     unitImage.innerHTML = '<img src="'.concat(
+    //         recommendedUnit.imgUrl ?
+    //             recommendedUnit.imgUrl :
+    //             'images/no-image.png',
+    //         '" alt="Image of the unit." />'
+    //     );
+    // } else {
+    //     unitImage.innerHTML = '';
+    // }
+    // if (
+    //     recommendedUnit &&
+    //     (recommendedUnit.priceSplit || recommendedUnit.pricePackage)
+    // ) {
+    //     unitFinancingBox.innerHTML = '<div class="image-div"><img src="https://img1.wsimg.com/isteam/ip/ec3d7ae1-84c5-494d-939d-ab7eac153ebf/2019-07-15%2012_58_29-60%20months%20financing%20images.png/:/rs=w:1440,h:1440" alt=""></div>\n            <p style="align-self: center; margin: auto; text-align: center; ">With 0% financing, pay as low as <span class="financing-monthly-amount">'.concat(
+    //         recommendedUnit.priceSplit ?
+    //             '$' + Math.ceil(recommendedUnit.priceSplit / 60) :
+    //             '$' + Math.ceil(recommendedUnit.pricePackage / 60),
+    //         '</span> per month!</p>'
+    //     );
+    // }
+    // if (recommendedReplacements.length > 0) {
+    //     replacementProducts.innerHTML = recommendedReplacements.reduce(function (
+    //         parts,
+    //         part
+    //     ) {
+    //         var thisPart;
 
-            if (part.name) {
-                thisPart =
-                    '<div class="row">' +
-                    '<div class="image-cell">' +
-                    '<img class="product-image" src="' +
-                    part.info.imgUrl +
-                    '">' +
-                    '</div>' +
-                    '<section class="product-info">' +
-                    '<h3 class="product-name">' +
-                    part.name +
-                    '</h3>' +
-                    '<div class="product-description"></div>' +
-                    '</section>' +
-                    '<section class="product-specs">' +
-                    '<div class="replacement-product-price"> $' +
-                    part.info.price +
-                    '</div>' +
-                    (part.info.ton ?
-                        ' <div class="product-seer">Tonnage: ' +
-                        part.info.ton +
-                        '</div>' : '') +
-                    (part.info.seer ?
-                        ' <div class="product-seer">SEER: ' +
-                        part.info.seer +
-                        '</div>' :
-                        '') +
-                    (part.info.btu ?
-                        ' <div class="product-btu">BTU: ' + part.info.btu + 'K' + '</div>' :
-                        '') +
-                    '</section>' +
-                    '</div>';
-            }
-            return parts + thisPart;
-        },
-            '');
-    }
+    //         if (part.name) {
+    //             thisPart =
+    //                 '<div class="row">' +
+    //                 '<div class="image-cell">' +
+    //                 '<img class="product-image" src="' +
+    //                 part.info.imgUrl +
+    //                 '">' +
+    //                 '</div>' +
+    //                 '<section class="product-info">' +
+    //                 '<h3 class="product-name">' +
+    //                 part.name +
+    //                 '</h3>' +
+    //                 '<div class="product-description"></div>' +
+    //                 '</section>' +
+    //                 '<section class="product-specs">' +
+    //                 '<div class="replacement-product-price"> $' +
+    //                 part.info.price +
+    //                 '</div>' +
+    //                 (part.info.ton ?
+    //                     ' <div class="product-seer">Tonnage: ' +
+    //                     part.info.ton +
+    //                     '</div>' : '') +
+    //                 (part.info.seer ?
+    //                     ' <div class="product-seer">SEER: ' +
+    //                     part.info.seer +
+    //                     '</div>' :
+    //                     '') +
+    //                 (part.info.btu ?
+    //                     ' <div class="product-btu">BTU: ' + part.info.btu + 'K' + '</div>' :
+    //                     '') +
+    //                 '</section>' +
+    //                 '</div>';
+    //         }
+    //         return parts + thisPart;
+    //     },
+    //         '');
+    // }
     recommendation.classList.add('show');
 };
 var getTonnage = function getTonnage(e) {
