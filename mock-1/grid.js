@@ -8,20 +8,20 @@ var productTitle = document.querySelector(".info-grid .title"),
   levelTotFinancingArr = document.querySelectorAll(".level-tot-financing"),
   levelTotPriceArr = document.querySelectorAll(".level-tot-price")
 
-productTitle.innerText = gasSystems[currentSystem].productTitle
+productTitle.innerText = gasSystems[recommendedUnit].productTitle
 pricingLevelArr.forEach((lvl, i) => {
-  lvl.innerText = gasSystems[currentSystem].pricingLevels[i]
+  lvl.innerText = gasSystems[recommendedUnit].pricingLevels[i]
 })
 seerArr.forEach((lvl, i) => {
-  lvl.innerText = `${gasSystems[currentSystem].seers[i]} SEER`
+  lvl.innerText = `${gasSystems[recommendedUnit].seers[i]} SEER`
 })
 levelDescriptionArr.forEach((lvl, i) => {
-  lvl.innerText = gasSystems[currentSystem].levelDescriptions[i]
-  console.log("grid.js---", `${gasSystems[currentSystem].seers[i]} SEER`)
+  lvl.innerText = gasSystems[recommendedUnit].levelDescriptions[i]
+  console.log("grid.js---", `${gasSystems[recommendedUnit].seers[i]} SEER`)
 })
 
 levelFeatureListArr.forEach((ul, i) => {
-  gasSystems[currentSystem].levelFeatureLists[i].forEach((txt, i) => {
+  gasSystems[recommendedUnit].levelFeatureLists[i].forEach((txt, i) => {
     let li = document.createElement("li")
     li.innerText = txt
     ul.appendChild(li)
@@ -29,11 +29,11 @@ levelFeatureListArr.forEach((ul, i) => {
 })
 
 levelTotFinancingArr.forEach((lvl, i) => {
-  lvl.innerText = `$${gasSystems[currentSystem].levelTotFinancings[i]} / month`
+  lvl.innerText = `$${gasSystems[recommendedUnit].levelTotFinancings[i]} / month`
 })
 
 levelTotPriceArr.forEach((lvl, i) => {
-  let sysPrice = gasSystems[currentSystem].levelTotPrices[i]
+  let sysPrice = gasSystems[recommendedUnit].levelTotPrices[i]
   lvl.innerText = `$${sysPrice}`
   pricePerMonthArr[i].innerText = `$${Math.floor(sysPrice / 60)}/month`
 })
